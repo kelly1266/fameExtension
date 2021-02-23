@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			var user = JSON.parse(configHttp.responseText).user;
 			var youtubeURL = tab[0].url;
 			var videoString = youtubeURL.substring((youtubeURL.indexOf("v=")+2), (youtubeURL.indexOf("v=")+13));
-			var url = domain + "play" + "?user=" + user + "&youtubeURL= " + videoString;
+			var url = domain + "play" + "?user=" + user + "&youtubeURL=" + videoString;
 			var xmlHttp = new XMLHttpRequest();
         	xmlHttp.open( "GET", url, false );
         	xmlHttp.send( null );
